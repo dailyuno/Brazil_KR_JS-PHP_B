@@ -1,0 +1,236 @@
+* {
+    font-family: Calibri;
+}
+
+body {
+    font-weight: 300;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.625;
+    background-color: #f2f4fb;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    color: #232323;
+    margin-bottom: 0;
+}
+
+/**
+ * Layout
+ */
+html,
+body {
+    height: 100%;
+}
+
+#app {
+    min-height: 100%;
+    display: flex;
+}
+
+.layouts {
+    width: 100%;
+}
+
+.content {
+    position: relative;
+}
+
+.content-container {
+    padding: 100px 50px;
+}
+
+/**
+ * bootstrap customize
+ */
+.btn {
+    border-radius: 2px;
+}
+
+.btn-success {
+    background-color: #2fc195;
+    border-color: #2fc195;
+}
+
+.btn-primary {
+    background-color: #007bfd;
+    border-color: #007bfd;
+}
+
+.btn-danger {
+    background-color: #fa555f;
+    border-color: #fa555f;
+}
+
+/**
+ * toast
+ */
+.fixed-toast {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 8px 16px;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 18px;
+}
+
+.fixed-toast.success {
+    background-color: #2fc195;
+}
+
+.fixed-toast.error {
+    background-color: #fa555f;
+}
+
+/**
+ * app header
+ */
+.app-header {
+    padding: 0 34px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.app-header .navbar-brand a {
+    color: #232323;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.app-header .nav-item:not(:first-child) {
+    margin-left: 40px;
+}
+
+/**
+ * form container
+ */
+.form-container .form-content {
+    padding: 80px 50px;
+    background-color: #fff;
+}
+
+.form-container .form-bg {
+    padding: 60px 50px;
+}
+
+.form-container .form-bg-img {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+    margin-bottom: 20px;
+}
+
+.form-container .form-bg-img img {
+    width: 100%;
+}
+
+.form-container .form-group {
+    margin-bottom: 30px;
+}
+
+.form-container .form-group label {
+    color: #232323;
+    font-size: 16px;
+}
+
+.form-container .form-group label span {
+    color: #fa555f;
+}
+
+.form-container .form-control {
+    height: 50px;
+    border-radius: 2px;
+}
+
+.form-container .send-btn {
+    min-width: 190px;
+    height: 50px;
+    background-color: #ef174c;
+    box-shadow: 0 6px 7px rgba(239, 23, 56, 0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-container .send-btn:hover {
+    background-color: rgba(229, 13, 46, 1);
+}
+
+.form-container .send-btn:active {
+    box-shadow: none;
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    -o-transform: translateY(6px);
+    transform: translateY(6px);
+}
+
+/**
+ * search form
+ */
+.search-form {
+    display: flex;
+    position: relative;
+}
+
+.search-form img {
+    position: absolute;
+    width: 24px;
+    top: 18px;
+    left: 20px;
+}
+
+.search-form input.form-control {
+    height: 60px;
+    padding: 16px 16px 16px 60px;
+    border: 1px solid #ddd;
+}
+
+/**
+ * event item
+ */
+.event-item {
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.event-item .event-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.event-item .event-detail-item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.event-item .event-detail-img img {
+    width: 50px;
+}
+
+.event-item .event-detail-content {
+    padding-left: 20px;
+}
+
+.event-item .event-detail-value {
+    font-size: 16px;
+    color: #232323;
+}
+
+.event-item .event-detail-key {
+    font-size: 14px;
+}

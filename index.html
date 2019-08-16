@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CS Taeachers Club</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="library/bootstrap-4.2.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <!-- //Styles -->
+</head>
+<body>
+
+    <!-- Application -->
+    <div id="app">
+
+        <transition name="fade" mode="out-in">
+            <!-- Content -->
+            <router-view></router-view>
+            <!-- //Content -->
+        </transition>
+
+        <!-- Toast msg -->
+        <transition name="fade-slide-up" mode="out-in">
+            <div class="fixed-toast" role="alert" aria-label="toast" aria-hidden="true"
+                 :key="toast.timer"
+                 :class="toast.msgType"
+                 v-if="toast.msg && toast.msgType">
+                {{ toast.msg }}
+            </div>
+        </transition>
+        <!-- //Toast msg -->
+    </div>
+    <!-- //Application -->
+
+    <!-- Scripts -->
+    <script src="library/vue-2.5.22/dist/vue.min.js"></script>
+    <script src="library/vue-router/dist/vue-router.min.js"></script>
+    <script src="js/helper/api.js"></script>
+    <script src="js/components/header.js"></script>
+    <script src="js/views/course/list.js"></script>
+    <script src="js/views/user/login.js"></script>
+    <script src="js/views/user/join.js"></script>
+    <script src="js/views/user/course.js"></script>
+    <script src="js/router/routes.js"></script>
+    <script src="js/router/index.js"></script>
+    <script src="js/store/index.js"></script>
+    <script src="js/app.js"></script>
+    <!-- //Scripts -->
+
+</body>
+</html>
